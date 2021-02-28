@@ -30,15 +30,15 @@
 
       <!--task-view-->
       <task-view @show-image="showImage" :showing-image="showingImage" :current-index="currentIndex"
-      :search-image="searchImage" @hide-image="hideImage"></task-view>
+        :search-image="searchImage" @hide-image="hideImage"></task-view>
 
       <!--task-item-->
-      <task-item :tasks="tasks" :search-image="searchImage" @show-image="showImage" 
-      :search-finding="searchFinding" ></task-item>
-   
+      <task-item :tasks="tasks" :search-image="searchImage" @show-image="showImage" :search-finding="searchFinding">
+      </task-item>
+
+    </div>
   </div>
-  </div>
-  
+
   <!-- my main.js -->
   <script src="./main.js"></script>
   <script src="./components/PhotoSearch.js"></script>

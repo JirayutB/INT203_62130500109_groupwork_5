@@ -44,19 +44,14 @@ const app = Vue.createApp({
             return this.tasks.filter( t => !t.done ).length
         },
         searchImage() {
-            console.log("open")
             this.searchFinding = false;
             if (this.inputSearch == '') {
-                console.log("blank");
                 return this.tasks
                 
             } else {
-                console.log("Many")
                 search = this.tasks.filter(task => this.inputSearch.toLowerCase().split(' ')
                 .every(v => task.article.toLowerCase().includes(v)));
-                console.log(search)
                 if (search == '') {
-                    console.log("King")
                     this.searchFinding = true;
                 } else {
                     return search;
